@@ -1,3 +1,5 @@
+import { nanoid } from "@reduxjs/toolkit";
+
 const Task = () => {
 
     const secondsToWidth = (seconds) =>{
@@ -35,7 +37,7 @@ const Task = () => {
 
         return (
             <>  
-                <div className={`rounded h-full ${colorValue}`} style={{width: `${secondsToWidth(datapoint.seconds)}%`}}></div>
+                <div key={nanoid()} className={`rounded h-full ${colorValue}`} style={{width: `${secondsToWidth(datapoint.seconds)}%`}}></div>
             </>
         )
     })

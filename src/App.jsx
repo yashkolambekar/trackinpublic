@@ -1,3 +1,4 @@
+import Controls from "./components/Controls/Controls";
 import Header from "./components/Header/Header";
 import Timeline from "./components/Timeline/Timeline";
 
@@ -6,6 +7,7 @@ const App = () => {
     <>
       <Header />
       <Timeline />
+      <Controls />
     </>
   )
 }

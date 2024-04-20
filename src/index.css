@@ -5,3 +5,13 @@
 body{
     @apply bg-rose-200;
 }
+
+.ds-1{
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+    border: 1px solid rgba(0,0,0,1);
+}
+
+.ds-1-active:active{
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,0);
+    transform: translate(4px, 4px);
+}

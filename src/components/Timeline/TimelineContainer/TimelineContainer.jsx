@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useDraggable } from "react-use-draggable-scroll";
 import Day from "./Day/Day";
+import { nanoid } from "@reduxjs/toolkit";
 
 
 const TimelineContainer = () => {
@@ -10,23 +11,9 @@ const TimelineContainer = () => {
 
     return (
         <>
-            <div className="flex flex-row min-w-[80rem] max-w-[80rem] min-h-[30rem] bg-rose-100 my-8 border-4 border-black rounded-xl overflow-x-scroll" {...events} ref={ref} >
-                <Day />    
-                <Day />    
-                <Day />    
-                <Day />    
-                <Day />    
-                <Day />    
-                <Day />    
-                <Day /> 
-                <Day />    
-                <Day />    
-                <Day />    
-                <Day />    
-                <Day />    
-                <Day />    
-                <Day />    
-                <Day /> 
+            <div className="flex flex-row  w-[80rem] max-w-[80%] min-h-[30rem] bg-rose-100 border-4 border-black rounded-xl overflow-x-scroll" {...events} ref={ref} >
+                <Day key={nanoid()} />    
+                <Day key={nanoid()} />    
             </div>
         </>
     )
