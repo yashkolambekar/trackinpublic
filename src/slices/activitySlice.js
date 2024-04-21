@@ -4,42 +4,129 @@ const initialState = [
   {
     name: "DSA",
     identifier: nanoid(),
-    color: "#00ff00",
+    color: "bg-[#00ff00]",
     isActive: false,
     datapoints: [
-      { start: 38942, end: 51526 },
-      { start: 57303, end: 70430 },
-      { start: 79457, end: 86107 },
-      { start: 86131, end: 86339 },
-      { start: 86344, end: 86379 },
     ],
   },
   {
     name: "0-100",
     identifier: nanoid(),
-    color: "#00ffff",
-    isActive: true,
+    color: "bg-[#00ffff]",
+    isActive: false,
     datapoints: [
-      { start: 21961, end: 81162 },
-      { start: 85495, end: 86173 },
-      { start: 86309, end: 86327 },
-      { start: 86348, end: 86351 },
-      { start: 86399, end: 86400 },
     ],
   },
   {
     name: "Python",
     identifier: nanoid(),
-    color: "#ff00ff",
+    color: "bg-[#ff00ff]",
     isActive: false,
     datapoints: [
-      {
-        start: 2839238,
-        end: 3920329,
-      },
     ],
   },
+  {
+    name: "PMO",
+    identifier: nanoid(),
+    color: "bg-[#892ff0]",
+    isActive: false,
+    datapoints: [
+    ],
+
+  },
+
+
+  {
+    name: "DSA",
+    identifier: nanoid(),
+    color: "bg-[#00ff00]",
+    isActive: false,
+    datapoints: [
+    ],
+  },
+  {
+    name: "0-100",
+    identifier: nanoid(),
+    color: "bg-[#00ffff]",
+    isActive: false,
+    datapoints: [
+    ],
+  },
+  {
+    name: "Python",
+    identifier: nanoid(),
+    color: "bg-[#ff00ff]",
+    isActive: false,
+    datapoints: [
+    ],
+  },
+  {
+    name: "PMO",
+    identifier: nanoid(),
+    color: "bg-[#892ff0]",
+    isActive: false,
+    datapoints: [
+    ],
+
+  },
+
+
+
+
 ];
+
+// const initialState = [
+//   {
+//     name: "DSA",
+//     identifier: nanoid(),
+//     color: "bg-[#00ff00]",
+//     isActive: false,
+//     datapoints: [
+//       { start: 38942, end: 51526 },
+//       { start: 57303, end: 70430 },
+//       { start: 79457, end: 86107 },
+//       { start: 86131, end: 86339 },
+//       { start: 86344, end: 86379 },
+//     ],
+//   },
+//   {
+//     name: "0-100",
+//     identifier: nanoid(),
+//     color: "bg-[#00ffff]",
+//     isActive: true,
+//     datapoints: [
+//       { start: 21961, end: 81162 },
+//       { start: 85495, end: 86173 },
+//       { start: 86309, end: 86327 },
+//       { start: 86348, end: 86351 },
+//       { start: 86399, end: 86400 },
+//     ],
+//   },
+//   {
+//     name: "Python",
+//     identifier: nanoid(),
+//     color: "bg-[#ff00ff]",
+//     isActive: false,
+//     datapoints: [
+//       {start: 21961, end: 81162 },
+//       { start: 85495, end: 86173 },
+//     ],
+//   },
+//   {
+//     name: "PMO",
+//     identifier: nanoid(),
+//     color: "bg-[#892ff0]",
+//     isActive: true,
+//     datapoints: [
+//       { start: 21961, end: 81162 },
+//       { start: 85495, end: 86173 },
+//       { start: 86309, end: 86327 },
+//       { start: 86348, end: 86351 },
+//       { start: 86399, end: 86400 },
+//     ],
+
+//   }
+// ];
 
 const FUNaddNewTask = (state, action) => {
   const newTask = {

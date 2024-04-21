@@ -11,9 +11,16 @@ const TimelineContainer = () => {
 
     return (
         <>
-            <div className="flex flex-row  w-[80rem] max-w-[80%] min-h-[30rem] bg-rose-100 border-4 border-black rounded-xl overflow-x-scroll" {...events} ref={ref} >
-                <Day key={nanoid()} />    
-                <Day key={nanoid()} />    
+            <div style={{
+
+
+    backgroundSize: "4.1666667% 2rem",
+    backgroundPositionX: "2.08333%",
+    backgroundImage: "radial-gradient(circle, rgba(0, 0, 0, 0.3) 1.5px, rgba(0, 0, 0, 0) 1px)"
+  
+
+            }}  className="ds-2 flex flex-row  w-[80rem] max-w-[80%] min-h-[10rem] bg-rose-100 border-4 border-black rounded-xl overflow-x-scroll" {...events} ref={ref} >
+                <Day key={nanoid()} />
             </div>
         </>
     )
